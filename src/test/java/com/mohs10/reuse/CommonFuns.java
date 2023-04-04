@@ -35,9 +35,9 @@ import com.mohs10.or.HomePage;
 			 */
 			//aDriver.datepicker(HomePage.datepick, "url");
 			//aDriver.click(HomePage.book, "value2");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			JavascriptExecutor je=(JavascriptExecutor)driver;//Instance of js executor
-			je.executeScript("window.scroll(0,500)\r\n");
+			je.executeScript("window.scroll(0,600)\r\n");
 			 aDriver.selectDropDown(HomePage.datepick,"value", value2);
 			 
 				//je.executeScript("window.scroll(0,5000)\r\n");
