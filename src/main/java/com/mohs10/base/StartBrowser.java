@@ -43,11 +43,11 @@ public class StartBrowser {
 	  @BeforeClass
 	  public void beforeClass() {
 		  WebDriverManager.chromedriver().setup();
-		  //ChromeOptions options = new ChromeOptions();
-		    //options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		  ChromeOptions options = new ChromeOptions();
+		    options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		  //WebDriverManager.firefoxdriver().setup();
 		 // WebDriverManager.edgedriver().setup();
-		  driver = new ChromeDriver();
+		  driver = new ChromeDriver(options);
 		  //driver= new FirefoxDriver();
 		  //driver= new EdgeDriver();
 		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
